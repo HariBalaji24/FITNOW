@@ -9,7 +9,7 @@ lerna-debug.log*
 # Environment Variables
 .env
 .env.*
-!.env.example
+!.env.exampl
 backend/.env
 
 # Diagnostic reports
