@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 
 # Environment Variables
-.env
+backend/.env
 .env.*
 !.env.exampl
 backend/.env
