@@ -165,7 +165,7 @@ const Details = () => {
                   className={`absolute top-4 left-[55%] h-[2px] w-full transition-all duration-300 
                   ${
                     currpage > index
-                      ? "bg-gradient-to-r from-violet-500 to-fuchsia-500"
+                      ? "bg-linear-to-r from-violet-500 to-fuchsia-500"
                       : "bg-gray-600"
                   }`}
                 ></div>

@@ -5,7 +5,7 @@ export const Context = createContext();
 
 export const ContextProvider = ({ children }) => {
   const token = localStorage.getItem("auth-token");
-  const url = "https://fitnow-e69e.onrender.com"
+  const url = "http://localhost:3000"
   const [id, setId] = useState(null);
   const [details, setDetails] = useState(null);
   const [workoutgenerated, setworkoutgenerated] = useState();

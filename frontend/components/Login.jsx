@@ -10,7 +10,6 @@ const Login = () => {
   const { setId,url, id,setlogged} = useContext(Context);
   const [isSignup, setIsSignup] = useState(true);
   const [user, setuser] = useState({ name: "", email: "", password: "" });
-
   const navigate = useNavigate();
 
   const responsegoogle = async (authResult) => {
@@ -46,7 +45,7 @@ const Login = () => {
       return
     }
    
-    const url = `${url}/${isSignup ? "signin" : "login"}`;
+    const reditecturl = `${url}/${isSignup ? "signin" : "login"}`;
     const payload = {
       email: user.email,
       password: user.password,
@@ -54,7 +53,7 @@ const Login = () => {
     };
 
     try {
-      const response = await axios.post(url, payload, {
+      const response = await axios.post(reditecturl, payload, {
         headers: { "Content-Type": "application/json" },
       });
       const data = response.data
